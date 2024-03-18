@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,7 +12,8 @@ public class RandomPackage : MonoBehaviour
     
     private void Awake()
     {
-        packages = FindObjectsOfType<Packages>( true);
+        packages = FindObjectsOfType<Packages>(true);
+        
     }
 
     void Start()

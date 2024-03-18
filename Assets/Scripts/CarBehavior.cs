@@ -100,6 +100,12 @@ public class CarBehavior : MonoBehaviour
                 takePackage.setReceived(true);
             }
         }
+        if (collision.CompareTag("LoadScreen"))
+        {
+            SceneManager.LoadScene(1);
+        }
+
+
     }
 
     public void TryAgain()

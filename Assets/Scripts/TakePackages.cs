@@ -9,6 +9,7 @@ public class TakePackages : MonoBehaviour
     public Sprite receivedSprite;
     public GameObject renderObj = null;
     private SpriteRenderer spriteRenderer ;
+    public GameObject pos;
 
     private void Awake()
     {
@@ -18,11 +19,13 @@ public class TakePackages : MonoBehaviour
     private void Start()
     {
         isReceivedPackage = false;
+
     }
     public void setReceived(bool isReceived)
     {
         this.isReceivedPackage = isReceived;
         renderObj.transform.rotation = Quaternion.Euler(0, 0, rotateSprite);
         spriteRenderer.sprite = receivedSprite;
+        pos.gameObject.SetActive(false);
     }
 }

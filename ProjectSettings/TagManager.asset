@@ -9,6 +9,7 @@ TagManager:
   - SpeedUp
   - SlowDown
   - TakePackage
+  - LoadScreen
   layers:
   - Default
   - TransparentFX
